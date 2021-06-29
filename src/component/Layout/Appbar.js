@@ -15,12 +15,6 @@ const Appbar = ({ dark, setDark, openMenu, setOpenMenu }) => {
     return (
         <AppbarWrapper>
             <Logo />
-            <span onClick={() => setDark((prev) => !prev)}>
-                {dark ? <Sunsvg /> : <Moonsvg />}
-            </span>
-            <span onClick={() => setOpenMenu((prev) => !prev)}>
-                {openMenu ? <Closesvg /> : <Opensvg />}
-            </span>
             <ul>
                 <li>
                     <Link href='/project/front-end'>PROJECTS</Link>
@@ -32,6 +26,12 @@ const Appbar = ({ dark, setDark, openMenu, setOpenMenu }) => {
                     <Link href='/contact'>CONTECT</Link>
                 </li>
             </ul>
+            <span onClick={() => setDark((prev) => !prev)}>
+                {dark ? <Sunsvg /> : <Moonsvg />}
+            </span>
+            <span onClick={() => setOpenMenu((prev) => !prev)}>
+                {openMenu ? <Closesvg /> : <Opensvg />}
+            </span>
             <ul>
                 <li>
                     <Githubsvg />
@@ -65,7 +65,7 @@ const AppbarWrapper = styled.header`
         display: none;
     }
 
-    @media ${({ theme }) => theme.breakpoints.md} {
+    @media ${({ theme }) => theme.breakpoints.xl} {
         & > span:nth-of-type(2) {
             display: none;
         }

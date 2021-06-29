@@ -1,5 +1,7 @@
+import { Jumbotron } from "../component";
+
 const Home = () => {
-    return <>home</>;
+    return <Jumbotron />;
 };
 
 export default Home;
