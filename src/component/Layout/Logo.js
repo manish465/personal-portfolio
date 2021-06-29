@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styled from "styled-components";
-import { Logosvg } from "../assets/svg";
+import { Logosvg } from "../../assets/svg";
 
 const Logo = () => {
     return (
