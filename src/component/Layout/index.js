@@ -3,6 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyles, darkTheme, lightTheme } from "../../util/styles";
 import Appbar from "./Appbar";
 import Menu from "./Menu";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => {
     const [dark, setDark] = useState(true);
@@ -18,6 +19,7 @@ const Layout = ({ children }) => {
             />
             {openMenu ? <Menu /> : null}
             {children}
+            <Footer />
         </ThemeProvider>
     );
 };

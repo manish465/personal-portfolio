@@ -24,7 +24,7 @@ const Jumbotron = () => {
 export default Jumbotron;
 
 const JumbotronWrapper = styled.section`
-    margin-top: 4rem;
+    margin: 4rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,8 +42,7 @@ const JumbotronWrapper = styled.section`
         align-self: stretch;
     }
     @media ${({ theme }) => theme.breakpoints.xl} {
-        margin: 0 4rem;
-        margin-top: 6rem;
+        margin: 4rem;
         h1 {
             align-self: start;
         }
