@@ -1,12 +1,15 @@
+import Link from "next/link";
 import styled from "styled-components";
 import { Logosvg } from "../assets/svg";
 
 const Logo = () => {
     return (
-        <LogoWrapper>
-            <Logosvg />
-            <h2>PORTFOLIO</h2>
-        </LogoWrapper>
+        <Link href='/'>
+            <LogoWrapper>
+                <Logosvg />
+                <h2>PORTFOLIO</h2>
+            </LogoWrapper>
+        </Link>
     );
 };
 
