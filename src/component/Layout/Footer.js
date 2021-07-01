@@ -7,7 +7,7 @@ const Footer = () => {
         <FooterWrapper>
             <ul>
                 <li>
-                    <Link href='/project/front-end'>PROJECTS</Link>
+                    <Link href='/project/development'>PROJECTS</Link>
                 </li>
                 <li>
                     <Link href='/about'>ABOUT</Link>

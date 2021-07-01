@@ -4,7 +4,7 @@ import Link from "next/link";
 const Jumbotron = () => {
     return (
         <JumbotronWrapper>
-            <h1>Hi, i'am manish</h1>
+            <h1>Hi, i'am Manish</h1>
             <p>
                 A Web Designer And Web Developer From Odisha, India. Currently
                 Working On Some Personal Projects
