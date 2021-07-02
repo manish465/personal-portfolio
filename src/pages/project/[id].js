@@ -13,7 +13,7 @@ export const getStaticPaths = async () => {
     const paths = types.map((type) => ({ params: { id: type } }));
     return {
         paths: paths,
-        fallback: true,
+        fallback: false,
     };
 };
 

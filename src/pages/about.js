@@ -1,5 +1,11 @@
+import { AboutMe } from "../component";
+
 const About = () => {
-    return <>about</>;
+    return (
+        <>
+            <AboutMe />
+        </>
+    );
 };
 
 export default About;
