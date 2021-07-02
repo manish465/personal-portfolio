@@ -6,10 +6,6 @@ const Card = ({ item }) => {
     return (
         <CardWrapper>
             <Image src={item.image} alt={item.name} width={300} height={200} />
-            <a href={item.site} target='_blank'>
-                <span>To Site</span>
-                <TopRightArrow />
-            </a>
             <h2>{item.name}</h2>
             <div>
                 {item.tags.map((tag, key) => (
@@ -36,7 +32,6 @@ const CardWrapper = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     & > a,
     section a:nth-of-type(2) {
         padding: 0.2rem 1rem;
@@ -47,10 +42,6 @@ const CardWrapper = styled.section`
         path {
             stroke: ${({ theme }) => theme.colors.background};
         }
-    }
-    & > a {
-        position: absolute;
-        display: none;
     }
     img {
         width: 200px;
@@ -92,7 +83,8 @@ const CardWrapper = styled.section`
         border-radius: 1.2rem;
     }
     @media ${({ theme }) => theme.breakpoints.xl} {
-        width: 30%;
+        width: 26%;
         border-radius: 1.2rem;
+        padding: 1rem;
     }
 `;

@@ -28,6 +28,6 @@ const CardsWrapper = styled.section`
     @media ${({ theme }) => theme.breakpoints.xl} {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 `;
