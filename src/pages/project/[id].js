@@ -1,8 +1,8 @@
+import { Cards } from "../../component";
 import { connectToDatabase } from "../../util/mongodb";
 
 const Project = ({ items, types }) => {
-    console.log(items, types);
-    return <>Project</>;
+    return <Cards types={types} items={items} />;
 };
 
 export default Project;

@@ -163,8 +163,8 @@ export const Opensvg = () => (
     </svg>
 );
 
-export const Githubsvg = () => (
-    <a>
+export const Githubsvg = ({ git }) => (
+    <a href={git ? git : "https://github.com/manish465"} target='_blank'>
         <svg
             xmlns='http://www.w3.org/2000/svg'
             width='34.875'
@@ -235,4 +235,40 @@ export const Mailsvg = () => (
             </g>
         </svg>
     </a>
+);
+
+export const TopRightArrow = () => (
+    <svg
+        xmlns='http://www.w3.org/2000/svg'
+        width='13.678'
+        height='13.678'
+        viewBox='0 0 13.678 13.678'>
+        <g
+            id='Icon_feather-arrow-up-right'
+            data-name='Icon feather-arrow-up-right'
+            transform='translate(1.414 1.414)'>
+            <path
+                id='Path_3'
+                data-name='Path 3'
+                d='M10.5,21.35,21.35,10.5'
+                transform='translate(-10.5 -10.5)'
+                fill='none'
+                stroke='#fff'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                stroke-width='2'
+            />
+            <path
+                id='Path_4'
+                data-name='Path 4'
+                d='M10.5,10.5H21.35V21.35'
+                transform='translate(-10.5 -10.5)'
+                fill='none'
+                stroke='#fff'
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                stroke-width='2'
+            />
+        </g>
+    </svg>
 );
