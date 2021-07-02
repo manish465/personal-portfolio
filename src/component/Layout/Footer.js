@@ -78,6 +78,7 @@ const FooterWrapper = styled.footer`
         }
     }
     @media ${({ theme }) => theme.breakpoints.xl} {
+        margin-top: 10rem;
         flex-direction: row;
         justify-content: space-between;
         & > ul li {
