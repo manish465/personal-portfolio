@@ -10,7 +10,7 @@ const Jumbotron = () => {
                 Working On Some Personal Projects
             </p>
             <div>
-                <Link href='/project/front-end'>
+                <Link href='/project/development'>
                     <Button>My Work</Button>
                 </Link>
                 <Link href='/contact'>
