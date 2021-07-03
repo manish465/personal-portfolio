@@ -1,8 +1,16 @@
+import Head from "next/head";
 import { Cards } from "../../component";
 import { connectToDatabase } from "../../util/mongodb";
 
 const Project = ({ items, types }) => {
-    return <Cards types={types} items={items} />;
+    return (
+        <>
+            <Head>
+                <title>Portfolio | My Projects</title>
+            </Head>
+            <Cards types={types} items={items} />
+        </>
+    );
 };
 
 export default Project;

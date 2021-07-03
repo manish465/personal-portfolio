@@ -44,8 +44,9 @@ const CardWrapper = styled.section`
         }
     }
     img {
-        width: 200px;
-        border-radius: 1rem;
+        width: 260px;
+        border-radius: 2rem;
+        padding-top: 2rem;
     }
     h2 {
         font-size: 2rem;

@@ -1,10 +1,20 @@
+import Head from "next/head";
 import { Layout } from "../component";
 
 const MyApp = ({ Component, pageProps }) => {
     return (
-        <Layout>
-            <Component {...pageProps} />
-        </Layout>
+        <>
+            <Head>
+                <title>Portfolio</title>
+                <meta
+                    name='description'
+                    content='manish sahu portfolio website'
+                />
+            </Head>
+            <Layout>
+                <Component {...pageProps} />
+            </Layout>
+        </>
     );
 };
 
