@@ -182,7 +182,7 @@ export const Githubsvg = ({ git }) => (
 );
 
 export const LinkedInsvg = () => (
-    <a>
+    <a href='https://www.linkedin.com/in/manish-sahu-a956a3209?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8ilRMS1iRIC1JWSt086p4g%3D%3D'>
         <svg
             xmlns='http://www.w3.org/2000/svg'
             width='31.5'
