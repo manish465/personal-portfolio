@@ -6,7 +6,7 @@ const commonTheme = {
         secondary: "Saira,sans-serif",
     },
     breakpoints: {
-        md: "screen and (min-width: 428px)",
+        md: "screen and (min-width: 800px)",
         xl: "screen and (min-width: 1024px)",
     },
 };
